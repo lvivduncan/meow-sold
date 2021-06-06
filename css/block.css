@@ -3,9 +3,13 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 10px;
-    padding: 40px 20px 20px;
-    margin: 0 0 20px;
+    padding: 40px 0 20px;
+    margin: 0 20px 20px;
     border-bottom: 1px solid var(--black)
+}
+
+.block:last-child{
+    border: none;
 }
 
 /* /////
@@ -113,6 +117,7 @@ right div (articles)
 
 .block-view .image{
     grid-area: block-view-image;
+    border-bottom: 15px solid var(--purpur);
 }
 
 .block-view .desc{

@@ -1,0 +1,16 @@
+#copy{
+    padding: 10px 0;
+    background: var(--purpur);
+    color: var(--white);
+}
+
+#copy a{
+    /* color: var(--cyan); */
+    color: var(--white);
+    text-decoration: none;
+    transition: .5s;
+}
+
+#copy a:hover{
+    color: var(--black);
+}

@@ -36,13 +36,12 @@ h3{
     text-transform: uppercase;
 }
 
-h4{
+h4,h5{
     font-size: 18px;
     font-weight: bold;
 }
 
 a{
-    /* color: var(--black); */
     color: var(--cyan);
     text-decoration: underline;
     font-weight: 500;
@@ -60,6 +59,11 @@ p{
 img{
     max-width: 100%!important;
     height: auto;
+    vertical-align: middle;
+}
+
+strong{
+    color: var(--purpur)
 }
 
 .wrapper{
