@@ -1,0 +1,128 @@
+/* single content */
+.block{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+    padding: 40px 20px 20px;
+    margin: 0 0 20px;
+    border-bottom: 1px solid var(--black)
+}
+
+/* /////
+left div
+///// */
+/* .block-info{} */
+
+.button-bid{
+    display: inline-block;
+    background: var(--purpur);
+    color: var(--white);
+    width: 100px;
+    padding: 3px 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: .5s;
+}
+
+.button-bid:hover{
+    background: var(--cyan);
+}
+
+.button-buy-now{
+    display: inline-block;
+    background: var(--gray);
+    color: var(--white);
+    width: 160px;
+    padding: 3px 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: .5s;
+}
+
+.button-buy-now:hover{
+    background: var(--green);
+}
+
+/* three date */
+.block-date{
+    display: block;
+    margin: 20px 0;
+}
+
+.block-date li{
+    display: block;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+
+.block-date li.icon-start::before,
+.block-date li.icon-end::before,
+.block-date li.icon-calendar::before{
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin: 0 5px 0 0;    
+}
+
+.block-date li.icon-start::before{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23231F20' viewBox='0 0 16 16'%3E%3Cpath d='M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z'/%3E%3Cpath d='M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z'/%3E%3C/svg%3E");
+}
+
+.block-date li.icon-end::before{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23231F20' viewBox='0 0 16 16'%3E%3Cpath d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/%3E%3Cpath d='M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z'/%3E%3C/svg%3E");
+}
+
+.block-date li.icon-calendar::before{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23231F20' viewBox='0 0 16 16'%3E%3Cpath d='M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z'/%3E%3C/svg%3E");
+}
+
+
+/*/////////////////
+right div (articles)
+///////////////// */
+.block-view{
+    display: grid;
+    grid-template-columns: 1fr 90px;
+    grid-template-areas:
+        'block-view-h2 block-view-date'
+        'block-view-image block-view-image'
+        'block-view-desc block-view-desc';
+    grid-gap: 10px;
+    align-items: start;
+}
+
+.block-view h2{
+    grid-area: block-view-h2;
+}
+
+.block-view .date{
+    grid-area: block-view-date;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.block-view .image{
+    grid-area: block-view-image;
+}
+
+.block-view .desc{
+    grid-area: block-view-desc;
+}
+
+
+/* ///////////////////////
+right div (single product)
+/////////////////////// */
+.block-slider{
+
+}
