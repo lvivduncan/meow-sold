@@ -2,6 +2,7 @@
     padding: 10px 0;
     background: var(--purpur);
     color: var(--white);
+    text-align: center;
 }
 
 #copy a{

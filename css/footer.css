@@ -69,7 +69,7 @@ subscribe form
 
 #subscribe input{
     display: block;
-    width: 100%;
+    width: 300px;
     outline: none;
     padding: 10px 30px;
     border: 1px solid var(--gray);
